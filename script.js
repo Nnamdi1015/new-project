@@ -6,7 +6,7 @@ let h2Elem = document.getElementById("h2text");
 h1Elem.innerHTML = "My Blog Title";
 h1Elem.style.color = "blue";
 
-h1Elem.innerHTML = "The Kidnapping Pandemic !";
+h2Elem.innerHTML = "The Kidnapping Pandemic!";
 
 // grab input elements
 let InputFN = document.getElementById("firstname");
@@ -24,8 +24,7 @@ spanElem.style.fontWeight = "900";
 //let newFNValue = InputFN.value;
 //let newLNValue = InputLN.value;
 
-functiondisplayFullName()
- {
+function displayFullname(){
     let fullname = InputFN.value + " " + InputLN.value;
     spanElem.innerHTML = fullname;
 }

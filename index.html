@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <button onclick="prompt('how old are you' )"> Click me</button>
-    <h1 id=" h1text"></h1>
+    <h1 id="h1text"></h1>
     <h2 id="h2text"></h2>
     <label for=""> First Name <input type="text" name="" id="firstname"></label>
     <br>
@@ -19,7 +18,7 @@
     <label for=""> last Name <input type="text" name="" id="lastname"></label>
     <br>
     
-    <button>Submit</button>
+    <button onclick="displayFullname()">Submit</button>
 
     <p>Fullname : <span id="showFN"></span></p>
 
