@@ -77,20 +77,20 @@ const date = new Date("2025-05-12")
 //addition +
 let numb = 45 + 34;
 
-let w = 100 - numb ;
+let w = 100 - numb;
 
 let r = w * 3;
 
 let s = w ** 2;
 
-let a = s/2 ;
+let a = s / 2;
 
-let div 
+let div
 
 //Modulus (division reminder)
 
 let newR = 7 % 2;
-console.log (newR)
+console.log(newR)
 
 
 
@@ -103,18 +103,18 @@ console.log (newR)
 // comparison operators always return TRUE or FALSE
 
 
-let gh ="5";
+let gh = "5";
 
 gh === 5; // "5"===5
-console.log (gh === 5);
+console.log(gh === 5);
 
-gh !=5 ; // "5" !=5
-console.log(gh !=5)
+gh != 5; // "5" !=5
+console.log(gh != 5)
 
 
-let text1 ="A";
-let text2 ="B";
-let result =text1 < text2;
+let text1 = "A";
+let text2 = "B";
+let result = text1 < text2;
 
 //condiionals
 //if statement
@@ -123,14 +123,55 @@ let result =text1 < text2;
 
 
 //else if
-let gender =prompt ("select your gender");
+let gender = prompt("select your gender");
 
-if (gender =="male"){
+if (gender == "male") {
     alert("you are a male,go to Hall1");
 }
-else if (gender =="female"){
-    alert(gender =="female")
+else if (gender == "female") {
+    alert(gender == "female")
 }
 
 
 
+
+
+
+
+
+//Score aplication
+let score = prompt("Enter student score between 0- 0.100");
+
+if (!isNaN(parseFloat(score)) && isFinite(score)) {
+    console.log(`score: ${score} is number`);
+
+
+    if (score >= 90) {
+        alert("Grade A+");
+    }
+    else if (score >= 80) {
+        alert("Grade A");
+    }
+
+    else if (score >= 70) {
+        alert("Grade B");
+    }
+    else if (score >= 50) {
+        alert("Grade C");
+    }
+    else if (score >= 40) {
+        alert("Grade D");
+    }
+    else {
+        alert("Grade F");
+    }
+}
+
+else {
+    const alphabeticalRegex = /^[a-zA-Z]+$/;
+    if (alphabeticalRegex.test(score)) {
+        alert("The score you entered is an alphabetical string, please enter a number");
+    } else {
+        alert("The score is neither a number or an alphabeth");
+    }
+}
