@@ -31,4 +31,31 @@ for (let x = 100; x > 1; x--) {
 }
 
 // while loop
+// while (condition) {
+//     // code block to be executed
+// }
+let n = 0;
+while (n < 5) {
+    console.log(n);
+    n++;
+}
+
+
 // do while loop
+// do {
+//     // code block to be executed
+// } while (condition);
+
+let i = 0;
+while (n < 5) {
+    console.log(i);
+    i++;} while (i < 10);
+
+
+    
+    //for-in 
+    // for (const key in object) {
+//  if   (Object.hasOwn(object , key)) continue;
+//  const element =object[key];
+// }
+// 
